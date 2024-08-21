@@ -1,0 +1,294 @@
+.b{
+    background-color:skyblue;
+    overflow:hidden;
+}
+.b1{
+    background-color:rgb(173, 217, 235);
+}
+.box2{
+    position:fixed;
+    background-color:rgb(173, 217, 235);
+    height: 170px;
+    width: 1550px;
+    top:-25px;
+    right:-1px;
+}
+.box3{
+    position: relative;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+#box{
+    position: absolute;
+    top:75px;
+    left:500px;
+    border-radius: 10%;
+    background-color: black;
+    height:570px;
+    width: 570px;   
+}
+#box1{
+    position: absolute;
+    top:4.8px;
+    left:5.5px;
+    border-radius: 9%;
+    background-color:white;
+    height:560px;
+    width: 560px; 
+}
+#L{
+    position: relative;
+    bottom: 25px;
+    font-size:50px;
+}
+#Ll{
+    position: relative;
+    bottom: 235px;
+    font-size:50px;
+}
+#input1{
+    position:relative;
+    right:110px;
+    top:26px;
+    height: 25px;
+    width:290px;
+}
+.input1{
+    position:relative;
+     bottom:250px;
+    left:100px;
+}
+#input2{
+    position:relative;
+    right: 105px;
+    top:25px;
+    height: 25px;
+    width:290px;
+}
+.input2{
+    position:relative;
+     bottom:230px;
+    left:100px;
+}
+#input3{
+    position:relative;
+    left: 5px;
+    bottom:110px;
+    height: 30px;
+    width:130px;
+    font-size:20px;
+}
+.input3{
+    position:relative;
+     bottom:100px;
+    left:100px;
+}
+.input4{
+    position:absolute;
+     bottom:330px;
+    left:100px;
+}
+.input5{
+    position:absolute;
+     bottom:260px;
+    left:114px;
+}
+.input6{
+    position:absolute;
+     bottom:190px;
+    left:100px;
+}
+.input7{
+    position:absolute;
+     bottom:0px;
+    left:100px;
+}
+#P{
+    position: relative;
+    border-radius:30px;
+    left:75px;
+    bottom: 0px;
+    height:90px;
+    width:370px;
+}
+.box
+{
+    position: relative;
+    bottom:16px;
+    left:107px;
+    height: 90px;
+    width: 82px;
+    background-color:#C3C3C3;
+    border-radius: 50%;
+}
+.txt{
+    position:relative;
+    left:250px;
+    bottom:255px;
+}
+.txt1{
+    position:relative;
+    left:150px;
+    bottom:245px;
+}
+.txt2{
+    position:relative;
+    left:40px;
+    bottom:220px;
+    height: 100px;
+    width: 100px;
+}
+.Facebook{
+    position: relative;
+    bottom:250px;
+    right:-20%;
+    height:70px;
+    width:70px;
+}
+.Insta{
+    position: relative;
+    bottom:250px;
+    right:-22%;
+    height:70px;
+    width:70px;
+}
+.WhatsApp{
+    position: relative;
+    bottom:242px;
+    right:-22%;
+    height:90px;
+    width:90px;
+}
+.Twitter{
+    position: relative;
+    bottom:250px;
+    right:-22%;
+    height:70px;
+    width:70px;
+}
+.vs{
+    position:fixed;
+    right:940px;
+    bottom: 550px;
+    height: 200px;
+}
+.Pro{
+    position:fixed;
+    height: 60px;
+    width: 160px;
+    bottom: 625px;
+    left: 187vh;
+}
+.shearch{
+    position:fixed;
+    border-radius: 10px;
+    height:49px;
+    bottom:630px;
+    right: 70.2vh;
+    width:50.4px;
+}
+.in{
+    position:fixed;
+    border-radius: 10px;
+    height:45px;
+    bottom:630px;
+    right:70vh;
+    width:480px;
+}
+.down{
+    position:fixed;
+    height: 68px;
+    width: 200px;
+    left:152vh;
+    bottom:620.5px;
+}
+.logo{
+    position:fixed;
+    height: 105px;
+    width: 107px;
+    bottom: 600px;
+    right:1395px;
+}
+ul{
+    position:fixed;
+    list-style-type:none;
+    margin-top: -880px;
+    margin-left:50vh;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 1px solid black;
+    background-color:aliceblue;
+}
+ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.603);
+}
+.banner{
+    position: relative;
+    top:-320px;
+    left:700px;
+}
+.ban{
+    position:relative;
+    background-color:#62B4D9;
+    font-size:50px;
+    height: 433px;
+    width:500px;
+    top:180px;
+    left:200px;
+}    
+.font{
+  font-size: 50px;
+}
+.kid1{
+    position:absolute;
+    top:800px;
+    height:250px;
+    width:1300px;
+    left:130px;  
+}
+.kid2{
+    position:absolute;
+    top:1170px;
+    height:250px;
+    width:1300px;
+    left:130px;  
+    
+}
+.kid3{
+    position:absolute;
+    top:1530px;
+    height:250px;
+    width:1300px;
+    left:130px;
+}
+.ban1{
+    position:absolute;
+    top:1900px;
+    height:350px;
+    width:1300px;
+    left:130px;
+}
+.info{
+     position:absolute;
+    top:2370px;
+    height:330px;
+    width:1530px;
+    right:1px;
+}
+.Img{
+    margin-top: 50px;
+}
+.all{
+    margin-top: 240px;
+}
+.alreng{
+     width:500px;
+     height:400px;
+}

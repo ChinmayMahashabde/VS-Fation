@@ -1,0 +1,615 @@
+
+.box3{
+  position: absolute;
+  border-radius: 8px;
+  left: 40px;
+  top: 170px;
+  height: 730px;
+  width:  300px;
+  background-color:rgba(255, 255, 255, 0.409);
+}
+.box3:hover{
+  background-color:rgba(255, 255, 255, 0.662);
+}
+
+.body{
+  background-color: rgba(173, 220, 235, 0.352);
+  overflow-x: hidden;
+  /*display: flex;*/
+}
+
+/*.vs{
+  position:fixed;
+  display: flex;
+  border-radius:50%;
+  top:10px;
+  left:76px;
+  height: 100px;
+}*/
+/*.vslogo{
+  position:fixed;
+  border-radius:50%;
+  width:103px;
+  height:102px;
+  left:76px;
+  top: 9px;
+}*/
+.FLogo{
+  margin-top:-150px;
+  margin-bottom:15px;
+  margin-left:-20px;
+  width:165px;
+  height:115px;
+}
+
+.FLogo-back{
+  position:fixed;
+  left:30px;
+  top:120px;
+}
+
+.inter{
+  position:fixed;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius:10px;
+  border-style: none;
+  display: flex;
+  width:23%;
+  height:40px;
+ left:60.2%;
+  top:30px;
+}
+.inter:hover{
+  box-shadow: 0px 3px 10px 0px black;
+}
+
+.Profile{
+  position:fixed;
+  border-top-right-radius:40px;
+  border-top-left-radius: 40px;
+  display: flex;
+  left:87%;
+  top:15px;
+}
+.Profile:hover{
+  box-shadow: 0px 3px 10px 0px black;
+}
+.Profile-1{
+  position:fixed;
+  display: flex;
+  top:15px;
+  left:94%;
+}
+.btn1{
+  position:fixed;
+  display: flex;
+  border-radius:8px;
+  border-style: none;
+  width:65px;
+  height:60px;
+  top:20px;
+  left:94%;
+}
+
+.shearchLogo{
+  position:fixed;
+  display: flex;
+  width:50px;
+  top: 24.8px;
+  left:56.8%;
+}
+
+.btn2{
+  position:fixed;
+  display: flex;
+  border-style: none;
+  border-top-left-radius:8px;
+  border-bottom-left-radius:8px;
+  width:50px;
+  height:40.2px;
+  top:29.3px;
+  left:56.9%;
+}
+.btn2:hover{
+  box-shadow: 0px 3px 10px 0px black;
+}
+.btn1:hover{
+  box-shadow: 0px 3px 10px 0px black;
+}
+
+.font{
+  position:fixed;
+  background-color:rgb(244, 251, 255);
+  top:0px;
+  height: 110px;
+  width:100%;
+ 
+}
+.navbar{
+  background-color:rgb(244, 251, 255);
+  left:230px;
+  bottom:30px;
+}
+header{
+  position:fixed;
+  top:50px; left:-10px; right:0%;
+  /*box-shadow:0 5px 10px black;*/
+  padding: 10px ;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  z-index:100;
+}
+header .nav ul{
+  list-style:none;
+}
+
+header .nav ul li{
+  position: relative;
+  float: left;
+}
+header .nav ul li a{
+  font-size: 17px;
+  padding: 10px;
+  color: black;
+  display: block;
+}
+header .nav ul li a:hover{
+  background-color: greenyellow;
+}
+header .nav ul li ul{
+  position: absolute;
+  left:0px;
+  width:200px;
+  background: #fff;
+  display: none;
+}
+header .nav ul li ul li{
+  width:100%; left:-30px;
+  border-top:1px solid rgba(0, 0, 0, 0.119);
+}
+
+header .nav ul li .ul{
+  position: absolute;
+  left:0px;
+  width:200px;
+  background: #fff;
+  display: none;
+}
+
+header .nav ul li:hover > ul{
+  display:initial;
+}
+
+
+
+
+
+/*.space{
+  margin-left:100px;
+  margin-top:15px;
+} */ 
+.navb {
+  overflow: hidden;
+  /*background-color: #333;*/
+  font-size:15px;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+.navb a {
+  float: left;
+  font-size: 15px;
+  color:black;
+  text-align: center;
+  padding:5px 5px;
+  text-decoration: none;
+}
+
+.drop {
+  float: left;
+  overflow: hidden;
+}
+
+.drop .btnn {
+  font-size: 50px;
+  /*font-family: "Lucida Calligraphy";*/
+  border: none;
+  outline: none;
+  padding-inline:10px;
+  background-color: inherit;
+  /*font: inherit;*/
+  margin: 0;
+  border-top-right-radius:8px;
+  border-top-left-radius :8px;
+
+}
+
+/*.navbar a:hover{
+  border-style:double;
+}*/
+.drop:hover .btnn {
+
+  border-bottom:solid 4px #c4c3c371;
+ background-color:#c4c3c328;
+}
+
+.drop-con {
+  display: none;
+  position: absolute;
+  background-color: rgb(244, 251, 255);
+  width: 170%;
+  left: 0;
+  border-radius: 8px;
+  margin-left:-20px;
+  margin-top:-2px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.drop-con .header {
+  background:rgb(244, 251, 255);
+  padding: 16px;
+  color: white;
+}
+
+.drop:hover .drop-con {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.CoLumn {
+  float: left;
+  /*width: 22.1%;*/
+  margin-left:20px;
+  border-radius: 8px;
+  padding-inline:20px;
+  background-color: rgba(244, 251, 255, 0.721);
+  height: 360px;
+}
+
+.CoLumn a {
+  float: none;
+  font-family: "Lucida Calligraphy";font-style: normal;
+  color:gray;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align:left;
+}
+
+.CoLumn a:hover {
+
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+/*.CoL:after {
+  /*content: "";*
+  display: table;
+  /*clear: both;*
+}*/
+
+
+/*.box2{
+  position:fixed;
+  display: flex;
+  background-color:/*rgb(244, 251, 255)*blue;
+  height: 130px;
+  width:100%;
+  top:-25px;
+  right:-1px;
+}*/
+
+
+
+.carousel  {
+  margin-top: 140px;
+  left:1px;
+  width:1520px;
+}
+.d-block{
+  max-width:1520px;
+  height:500px;
+}
+/*#carouselExampleFade button{
+  background-color: red;
+}*/
+
+
+.category1{
+  font-family: "Lucida Calligraphy";font-style: normal;
+  /*background-color: #c4c3c3a4;*/
+  width:600px;
+  font-size: 40px;
+  border-radius:60px;
+  margin-top:100px;
+  margin-left:100px;
+}
+.category1:hover{
+  /*background-color:lightslategray;*/
+  color:black;
+  /*-shadow: 0px 10px 10px 0px black;*/
+  text-shadow:10px 10px  2px rgba(128, 128, 128, 0.395) ;
+  
+}
+
+.AllI{
+  position: absolute;
+  float: left;
+  /*margin-top: 70px;*/
+  margin-left: 20px;
+  padding-top:70px;
+}
+.AlI{
+  position: absolute;
+  float: left;
+  /*margin-top: 70px;*/
+  margin-left: 20px;
+  padding-top:400px;
+}
+/*.AI{
+  position: absolute;
+  float: left;
+  /*margin-top: 70px;*
+  margin-left: 20px;
+  padding-top:730px;
+}*/
+.I{
+  margin-left: 20px;
+  background-color:  rgba(244, 251, 255, 0.721);
+  border-radius: 5px;
+  border:solid black 1px;
+  width:220px;
+  height:280px;
+}
+
+
+.category2    {
+  font-family: "Lucida Calligraphy";font-style: normal;
+  /*background-color: #c4c3c3a4;*/
+  width:400px;
+  font-size: 40px;
+  border-radius:60px;
+  margin-top:50px;
+  margin-left:100px;
+}
+
+.alim1{
+  margin-top:750px;
+}
+
+.category2:hover{
+  /*background-color:lightslategray;*/
+  color:black;
+  /*-shadow: 0px 10px 10px 0px black;*/
+  text-shadow:10px 10px  2px rgba(128, 128, 128, 0.395) ; 
+}
+
+.AI{
+  position: absolute;
+  float: left;
+  /*margin-top: 70px;*/
+  margin-left: 20px;
+  padding-top:50px;
+}
+
+.Im{
+  margin-left: 20px;
+  background-color: rgba(244, 251, 255, 0.721);
+  border-radius: 5px;
+  border:solid black 1px;
+  width:185px;
+  height:230px;
+}
+.alim2{
+  margin-top:1100px;
+}
+.category3{
+  font-family: "Lucida Calligraphy";font-style: normal;
+  /*background-color: #c4c3c3a4;*/
+  width:500px;
+  font-size: 40px;
+  border-radius:60px;
+  margin-top:-750px;
+  margin-left:100px;
+}
+
+.category3:hover{
+  /*background-color:lightslategray;*/
+  color:black;
+  /*-shadow: 0px 10px 10px 0px black;*/
+  text-shadow:10px 10px  2px  rgba(128, 128, 128, 0.395) ; 
+}
+
+.Ali{
+  position: absolute;
+  float: left;
+  /*margin-top: 70px;*/
+  margin-left: 20px;
+  padding-top:50px;
+}
+
+
+.alim3{
+  margin-top:1100px;
+}
+.category4{
+  font-family: "Lucida Calligraphy";font-style: normal;
+  /*background-color: #c4c3c3a4;*/
+  width:500px;
+  font-size: 40px;
+  border-radius:60px;
+  margin-top:-750px;
+  margin-left:100px;
+}
+
+.category4:hover{
+  /*background-color:lightslategray;*/
+  color:black;
+  /*-shadow: 0px 10px 10px 0px black;*/
+  text-shadow:10px 10px  2px rgba(128, 128, 128, 0.395) ; 
+}
+
+.Alim{
+  position: absolute;
+  float: left;
+  /*margin-top: 70px;*/
+  margin-left: 20px;
+  padding-top:50px;
+}
+
+
+.alim4{
+  margin-top:1100px;
+}
+.category5{
+  font-family: "Lucida Calligraphy";font-style: normal;
+  /*background-color: #c4c3c3a4;*/
+  width:500px;
+  font-size: 40px;
+  border-radius:60px;
+  margin-top:-750px;
+  margin-left:100px;
+}
+
+.category5:hover{
+  /*background-color:lightslategray;*/
+  color:black;
+  /*-shadow: 0px 10px 10px 0px black;*/
+  text-shadow:10px 10px  2px rgba(128, 128, 128, 0.395) ; 
+}
+
+.Allim{
+  position: absolute;
+  float: left;
+  /*margin-top: 70px;*/
+  margin-left: 20px;
+  padding-top:50px;
+}
+
+
+
+.category6{
+  font-family: "Lucida Calligraphy";font-style: normal;
+  /*background-color: #c4c3c3a4;*/
+  width:600px;
+  font-size: 40px;
+  border-radius:60px;
+  margin-top:370px;
+  margin-left:100px;
+}
+.category6:hover{
+  /*background-color:lightslategray;*/
+  color:black;
+  /*-shadow: 0px 10px 10px 0px black;*/
+  text-shadow:10px 10px  2px rgba(128, 128, 128, 0.395) ;
+  
+}
+
+/*.AllIM{
+  position: absolute;
+  float: left;
+  /*margin-top: 70px;
+  margin-left: 20px;
+  padding-top:50px;
+}*/
+.AlIM{
+  position: absolute;
+  float: left;
+  /*margin-top: 70px;*/
+  margin-left: 5px;
+  padding-top:300px;
+}
+/*.AI{
+  position: absolute;
+  float: left;
+  /*margin-top: 70px;*
+  margin-left: 20px;
+  padding-top:730px;
+}*/
+.img{
+  margin-left: 25px;
+  float: left;
+  background-color: rgba(244, 251, 255, 0.721);
+  border-radius: 50%;
+ border:solid black 1px;
+  width:185px;
+  height:185px;
+}
+.C{
+  float: left;
+  /*margin-top: 70px;*/
+  /*margin-left:10px;*/
+  padding-top:50px;
+}
+.brand{
+  color:blue;
+}
+.brand0{
+  font-size:30px;
+    margin-top:210px;
+    margin-left: -155px;
+}
+.brand1{
+  font-size:30px;
+    margin-top:210px;
+    margin-left: -140px;
+}
+
+.brand2{
+  font-size:30px;
+    margin-top:210px;
+    margin-left:-135px;
+}
+.brand3{
+  font-size:30px;
+    margin-top:210px;
+    margin-left: -123px;
+}
+.brand4{
+  font-size:30px;
+    margin-top:210px;
+    margin-left: -145px;
+}
+.brand5{
+  font-size:30px;
+    margin-top:210px;
+    margin-left: -125px;
+}
+.brand6{
+  font-size:30px;
+    margin-top:210px;
+    margin-left: -170px;
+}
+
+
+@media screen and (max-width: 1155px) {
+  .column {
+    display:none;
+    /*width: 100%;
+    height: auto;*/
+  }
+  .mega-menu{
+    display:none;
+  }
+  /*.font{
+    width: 100px; height:100px;
+    margin-left:90%;
+    background-color: red;
+  }*/
+  .inter{
+      display: none;
+  }
+  .btn1{
+      display:none;
+  }
+  .profile-1{
+    display:none;
+  }
+  .Profile{
+    display:none;
+  }
+  .portfolio-menu{
+    display:none;
+  }
+}

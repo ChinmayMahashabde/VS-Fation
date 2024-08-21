@@ -1,0 +1,404 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="angular.min.js"></script>
+    <script src="C.js"></script>
+    <!--<script src="Cart.js"></script>-->
+    <link rel="stylesheet" href="Style sheet/H.css">
+    <title>H</title>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+
+
+
+  <div class="portfolio-menu">
+    <h1 class="box3"></h1>
+    <ul class="ul1" >
+
+     <h1 align="center">Man's Fashion</h1>
+  
+  <!--<input type="checkbox" align="center" src="" >-->
+ <b><li><a href="car.html" >Shirts</a></li><br><br></b>
+ <b><li><a href="" >T-Shirts</a></li> <br><br></b>    
+ <b><li><a href="" >Polos</a></li><br><br></b>
+ <b><li><a href="" >Kurtas</a></li><br><br></b>
+ <b><li><a href="" >Jeans</a></li><br><br></b>
+ <b><li><a href="" >Blazer</a></li><br><br></b>
+ <b><li><a href="" >Formals</a></li><br><br></b>
+ <b><li><a href="" >Sports </a></li><br><br></b>     
+ <b><li><a href="" >Wolets & Belt</a></li><br><br></b>
+ <b><li><a href="" >breslet & Tie</a></li><br><br></b>
+ <b><li><a href="" >Footwear</a></li> <br><br></b>
+ <b><li><a href="" >Jewellery</a></li><br><br></b>
+ 
+    </ul>
+ </div>
+
+ 
+ 
+
+ <!--<span class="p1"></span>
+ 
+ <!--<span class="p2"></span>
+ 
+ <span class="p3"></span>
+ 
+ <span class="p4"></span>
+ 
+ <span class="p5"></span>
+
+ <span class="p6"></span>
+
+ <span class="p7"></span>
+
+ <span class="p8"></span>
+
+ <span class="p9"></span>
+
+ <span class="p10"></span>
+
+ <span class="p11"></span>
+
+ <span class="p12"></span>
+
+ <span class="p13"></span>
+
+ <span class="p14"></span>
+
+ <span class="p15"></span>
+
+ <span class="p16"></span>
+
+ <span class="p17"></span>
+
+ <span class="p18"></span>
+
+ <span class="p19"></span>
+
+ <span class="p20"></span>
+
+ <span class="p21"></span>
+
+ <span class="p22"></span>
+
+ <span class="p23"></span>
+
+ <span class="p24"></span>-->
+
+   <div class="all_item">
+    <div id="product">
+      <div ng-repeat="product in products |filter:searchText " id="list"><!--filter:searchText-->
+             <div class="fitem"><span class="i1"> 
+              <a href="{{product.linkUrl}}">
+             <img src="{{product.imgs}}" class="img1"></a>
+            </div>
+
+        </span>
+    
+         <div class="ainformation">
+          <div class="Plist">
+          <p class="pname">{{product.name}}</p>
+          </div>
+          <div class="Plist">
+          <p class="pprice">Rs.{{product.price}}</p>
+          </div>
+          <div class="">
+          <p class="pdis">{{product.discount}}</p>
+          </div>
+          <div class="">
+          <p class="pline">___</p>
+          </div>
+          <div class="">
+          <p class="prate" align="center">{{product.rates}}</p>
+          </div>
+
+         </div>
+        </a>
+      </div>
+    </div>
+   </div>
+
+   <h1 class="box2"></h1>
+  <header>
+   <h1 class="font"></h1>
+       <div class="space">
+           <nav class="mega-menu">
+
+             <div class="navbar">
+               <div class="dropdown">
+                  <button class="dropbtn"><a href="">MEN</a> 
+                 </button>
+                 <div class="dropdown-content">
+                   <div class="row">
+                     <div class="column">
+                       <h3>Top Wear</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                     <div class="column">
+                       <h3>Bottom Wear</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                     <div class="column">
+                       <h3>Bags & Footwear</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                      <div class="column">
+                       <h3>Jewellery & Accessories</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                   </div>
+                 </div>
+               </div> 
+               <div class="dropdown">
+                 <button class="dropbtn"><a href="">WOMEN</a>
+                 </button>
+                 <div class="dropdown-content">
+                   <div class="row">
+                     <div class="column">
+                       <h3>Top Wear</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                     <div class="column">
+                       <h3>Bottom Wear</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                     <div class="column">
+                       <h3>Bags & Footwear</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                      <div class="column">
+                       <h3>Jewellery & Accessories</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                   </div>
+                 </div>
+               </div> 
+               
+               <div class="dropdown">
+                 <button class="dropbtn"><a href="">KIDS</a>
+                 </button>
+                 <div class="dropdown-content">
+                   <div class="row">
+                     <div class="column">
+                       <h3>Top Wear</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                     <div class="column">
+                       <h3>Bottom Wear</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                     <div class="column">
+                       <h3>Bags & Footwear</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                      <div class="column">
+                       <h3>Jewellery & Accessories</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                   </div>
+                 </div>
+               </div> 
+               
+               <div class="dropdown">
+                 <button class="dropbtn"><a href="">BAGE & FOOTER</a>
+                 </button>
+                 <div class="dropdown-content">
+                   <div class="row">
+                     <div class="column">
+                       <h3>Top Wear</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                     <div class="column">
+                       <h3>Bottom Wear</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                     <div class="column">
+                       <h3>Bags & Footwear</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                      <div class="column">
+                       <h3>Jewellery & Accessories</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                   </div>
+                 </div>
+               </div> 
+               
+               <div class="dropdown">
+                 <button class="dropbtn"><a href="">JEWELLERY & ACCESSORIES</a>
+                 </button>
+                 <div class="dropdown-content">
+                   <div class="row">
+                     <div class="column">
+                       <h3>Top Wear</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                     <div class="column">
+                       <h3>Bottom Wear</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                     <div class="column">
+                       <h3>Bags & Footwear</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                      <div class="column">
+                       <h3>Jewellery & Accessories</h3>
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div>
+                   </div>
+                 </div>
+               </div> 
+             </div>
+           </nav>
+       </div> 
+</header>
+
+
+
+
+
+
+
+
+
+   <<span class="FLogo-back"><img src="Style sheet/VSL.png" class="FLogo"></span>
+
+<a href="LOGIN.html" class="por1"><img src="profil1.png" class="Profile" onclick="F()"></a>
+
+<button class="btn1" onclick="v()">
+ <img src="profil2.png" class="Profile-1"></button>
+ 
+<input type="text" placeholder="varun sagle" class="inter">
+ 
+<button class="btn2" type="submit" onclick="F()">
+<img src="shearbar.png" class="shearchLogo"></button>
+
+<img src="logo2.png" class="vslogo">
+
+
+<!--<section class="filter-gallery">   
+      
+       <div class="nav">
+
+         <ul class="ul">
+        <li> <a href="Man.html">Man</a>  </li>
+        <li> <a href="Woman.html">Woman</a> </li>
+        <li> <a href="kids.html">kids</a> </li>  
+        <li> <a href="Footwear.html">Footwear</a> </li>
+        <li> <a href="Bags.html">Bags</a>  </li>
+        <li> <a href="Jewellery.html">Jewellery</a> </li>
+        <li> <a href="Accessories.html">Accessories</a>  </li>
+         </ul>
+
+     </div>   
+   </section>-->  
+
+
+   <script>
+    
+    var myApp = angular.module('myApp', []);
+
+myApp.controller('myController', function($scope,$filter) {
+
+      $scope.carts=[];
+        $scope.products = [
+            {p_id: "1", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450",},
+            {p_id: "2", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:"Product B1.html" ,},
+            {p_id: "3", name: "hfbfhr",discount:"700",rates:"5.6", imgs: "", price:"1017", linkUrl:"tanle.html",},
+            {p_id: "4", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450", linkUrl:"Cart.html",},
+            {p_id: "5", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:"" },
+            {p_id: "6", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450", linkUrl:""},
+            /*{p_id: "7", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:""},
+            {p_id: "8", name: "hfbfhr",discount:"700",rates:"5.6", imgs: "", price:"1017", linkUrl:""},
+            {p_id: "9", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450", linkUrl:""},
+            {p_id: "10", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:""},
+            {p_id: "11", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450", linkUrl:""},
+            {p_id: "12", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:""},
+            {p_id: "13", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:""},
+            {p_id: "14", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450", linkUrl:""},
+            {p_id: "15", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:""},
+            {p_id: "16", name: "hfbfhr",discount:"700",rates:"5.6", imgs: "", price:"1017", linkUrl:""},
+            {p_id: "17", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450", linkUrl:""},
+            {p_id: "18", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:""},
+            {p_id: "19", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450", linkUrl:""},
+            {p_id: "20", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:""},
+            {p_id: "21", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450", linkUrl:""},
+            {p_id: "22", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:""},
+            {p_id: "23", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:""},
+            {p_id: "24", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450", linkUrl:""},*/
+        ];
+
+        $scope.search = function() {
+    $scope.products = $filter('filter')($scope.products, $scope.query);
+  };
+
+        $scope.add_cart = function(product){
+		if(product){
+			$scope.carts.push({p_id: product.p_id, name: product.p_name, price: product.p_price});
+		}	
+	}
+						
+	$scope.total = 0;
+				
+	$scope.setTotals = function(cart){
+		if(cart){
+			$scope.total += cart.p_price;
+		}
+	}
+				
+	$scope.remove_cart = function(cart){
+		if(cart){
+			$scope.carts.splice($scope.carts.indexOf(cart), 1);
+			$scope.total -= cart.p_price;
+		}
+	}
+});
+
+
+</script>
+
+</body>
+</html>

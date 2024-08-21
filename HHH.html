@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="angular.min.js"></script>
+    <script src="purfet/C.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>HHH</title>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+    <div>
+      <h1 class="box2"></h1>
+      <div class="portfolio-menu">
+         <h1 class="box3">
+         <ul class="ul1" >
+
+          <h1 align="center">Stylish Footwear</h1>
+       
+       <!--<input type="checkbox" align="center" src="" >-->
+      <b><li><a href="" >Shirts</a></li><br></b>
+      <b><li><a href="" >T-Shirts</a></li> <br></b>    
+      <b><li><a href="" >Polos</a></li><br></b>
+      <b><li><a href="" >Kurtas</a></li><br></b>
+      <b><li><a href="" >Jeans</a></li><br></b>
+      <b><li><a href="" >Blazer</a></li><br></b>
+      <b><li><a href="" >Formal Shirts</a></li><br></b>
+      <b><li><a href="" >Formal Pants</a></li><br></b>     
+      <b><li><a href="" >Wolets</a></li><br></b>
+      <b><li><a href="" >Belt & Tie</a></li><br></b>
+      <b><li><a href="" >Footwear</a></li> <br></b>
+      <b><li><a href="" >Jewellery</a></li><br></b>
+      
+         </ul>
+      </div>
+    </h1>
+
+
+       
+  
+ 
+
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+ 
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="PBanners and picks/banner.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="PBanners and picks/banner1.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="PBanners and picks/banner.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!--<div class="Setall">
+
+<span class="FLogo-back"><img src="Style sheet/VSL.png" class="FLogo"></span>
+
+<a href="LOGIN.html" class="por1"><img src="Style sheet/profil1.png" class="Profile" onclick="F()"></a>
+
+<button class="btn1" onclick="v()">
+ <img src="Style sheet/profil2.png" class="Profile-1"></button>
+ 
+<input type="text" placeholder="varun sagle" class="inter">
+ 
+<button class="btn2" type="submit" onclick="F()">
+<img src="Style sheet/shearbar.png" class="shearchLogo"></button>-->
+
+
+
+
+<script>
+   /* 
+    var myApp = angular.module('myApp', []);
+
+myApp.controller('myController', function($scope,$filter) {
+
+      $scope.carts=[];
+        $scope.products = [
+            {p_id: "1", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450",},
+            {p_id: "2", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:"Product B1.html" ,},
+            {p_id: "3", name: "hfbfhr",discount:"700",rates:"5.6", imgs: "", price:"1017", linkUrl:"tanle.html",},
+            {p_id: "4", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450", linkUrl:"Cart.html",},
+            {p_id: "5", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:"" },
+            {p_id: "6", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450", linkUrl:""},
+            {p_id: "7", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:""},
+            {p_id: "8", name: "hfbfhr",discount:"700",rates:"5.6", imgs: "", price:"1017", linkUrl:""},
+            {p_id: "9", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450", linkUrl:""},
+            {p_id: "10", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:""},
+            {p_id: "11", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450", linkUrl:""},
+            {p_id: "12", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:""},
+            {p_id: "13", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:""},
+            {p_id: "14", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450", linkUrl:""},
+            {p_id: "15", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:""},
+            {p_id: "16", name: "hfbfhr",discount:"700",rates:"5.6", imgs: "", price:"1017", linkUrl:""},
+            {p_id: "17", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450", linkUrl:""},
+            {p_id: "18", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:""},
+            {p_id: "19", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450", linkUrl:""},
+            {p_id: "20", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:""},
+            {p_id: "21", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450", linkUrl:""},
+            {p_id: "22", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:""},
+            {p_id: "23", name: "sagle",discount:"100",rates:"3.2", imgs: "", price:"20000", linkUrl:""},
+            {p_id: "24", name: "varun",discount:"400",rates:"4.2", imgs: "",price:"450", linkUrl:""},
+        ];
+
+        $scope.search = function() {
+    $scope.products = $filter('filter')($scope.products, $scope.query);
+  };
+
+        $scope.add_cart = function(product){
+		if(product){
+			$scope.carts.push({p_id: product.p_id, name: product.p_name, price: product.p_price});
+		}	
+	}
+						
+	$scope.total = 0;
+				
+	$scope.setTotals = function(cart){
+		if(cart){
+			$scope.total += cart.p_price;
+		}
+	}
+				
+	$scope.remove_cart = function(cart){
+		if(cart){
+			$scope.carts.splice($scope.carts.indexOf(cart), 1);
+			$scope.total -= cart.p_price;
+		}
+	}
+});
+*/
+</script>
+</body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset = "UTF-8" name = "viewport" content = "width=device-width, initial-scale=1" />
+<script src="angular.min.js"></script>
+<script src="Cart.js"></script>
+<title>B1</title>
+<link rel="stylesheet" href="Cart.css">
+<link rel = "stylesheet" type = "text/css" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
+</head>
+
+<body ng-app="shoppingcart" ng-controller="shoppingCTR" class="body">
+ 
+	<span class="img"></span>
+	
+	<div class="btn">
+	<!--<button class="btn1" ng-click = "add_cart(product)">Add to Cart</button>-->
+	<button class="btn2" onclick="F()">Bay Me </button>
+	</div>
+	
+		
+		<div class="portfolio-tem">
+			<div id = "product">
+				<div id = "list" ng-repeat = "product in products ">
+		   <a href=""><h2>
+		   <a href=""><span>
+			 <div class="">
+			  <img ng-src="{{product.p_image}}" class="img1">
+			 </div>
+		   </span>
+		   
+		   <div class="ainformation">
+			<p class="pname">{{product.p_name}}</p>
+			<p class="pprice">Rs.{{product.p_price}}</p>
+			<p class="pdis">{{product.discount}}</p>
+			<p class="pline">____</p>
+			<b><p class="pparsenteg">{{product.pparsenteg}}</p></b>
+			<p class="prate" align="center">{{product.rates}}</p>
+			<p class="previews">Reviews: {{product.previews}}</p>
+			<p class="FD" align="center">Free Delivery</p><br>
+			<button class="btn1" ng-click = "add_cart(product)" ondblclick="v()">Add to Cart</button>
+		   </div>
+		  </a>
+		</div>
+	  </div>
+	 </div>
+
+
+<!-<div class="col-4">
+	<div class = "panel">
+		<div class = "panel-heading">
+			<h5 align="center">MY CART</h5>
+		</div>
+		<div class = "panel-body table-responsive">
+			<table class = "table">
+				<thead>
+					<tr align="center">
+						<th>Product</th>
+						<th>Price</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat = "cart in carts" ng-init = "setTotals(cart)" align="center">
+						<td>{{cart.p_name}}</td>
+						<td>₱{{cart.p_price}}</td>
+						<td><button type = "button" ng-click = "remove_cart(cart)" class = "btn btn-danger"> X</button></td>
+					</tr>
+					<tr>
+						<td align = "right">Total</td>
+						<td>₱{{total}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+
+	<!--<div  ng-controller="studentController">
+		<!--<button ng-click="toggleData()" class="BTN">Show/Hide Data</button>-
+		<button class="btn2" ng-click="toggleData()">Bay Me </button>
+		<div class="bodybox" ng-class="{'hide': hideData}">
+		   <h2 align="center" class="Bill"> Bill</h2>
+	   <img src="" class="Isize" ><br><br>
+		<table ng-class="{'hide': hideData}" style="margin-left:-0px;" class="table">
+		   <tr>
+			  <th>Name</th>
+			  <th>Rs</th>
+			  <th>Discount</th>
+		   </tr>
+		
+		   <tr ng-repeat="student in students">
+			  <td style="width:100px;height:50px;">{{ student.Name1 }}</td>
+			  <td style="width:100px;height:50px;">{{ student.RollNo1 }}</td>
+			  <td style="width:100px;height:50px;">{{ student.Percentage1 }}</td>
+		   </tr>
+		</table>
+	 </div>-->
+
+
+    <!--<h1 class="box2"></h1>-->
+	<header>
+		<h1 class="font"></h1>
+				 <div class="space">
+				  <nav class="navbar">
+					
+					<div class="navb">
+					  <div class="drop">
+						<button class="btnn"><a href="Man.html">MEN</a>
+						</button>
+						<div class="drop-con">
+						  <div class="Row">
+							<div class="CoLumn">
+							  <h5>Top Wear</h5>
+							  <a href="AP/WEAR/top wearM/T-sharts.html">T-shirt</a>
+							  <a href="AP/WEAR/top wearM/Formal ShartsM.html">Formals Shirt</a>
+							  <a href="AP/WEAR/top wearM/Disain ShartsM.html">Disain Shirt & Tshirt</a>
+							  <a href="AP/WEAR/top wearM/Full ShartsM.html">Full Shirt & Tshirt</a>
+							  <a href="AP/WEAR/top wearM/Half ShartsM.html">Half Shirt & Tshirt</a>
+							  <a href="AP/WEAR/top wearM/Plan ShartsM.html">Plan Shirt & Tshirt</a>
+							</div>
+							<div class="CoLumn">
+							  <h5>Bottom Wear</h5>
+							  <a href="AP/WEAR/bootom wearM/Formal wearM.html">Formals</a>
+							  <a href="AP/WEAR/bootom wearM/JansM.html">Jeans</a>
+							  <a href="AP/WEAR/bootom wearM/ShortsM.html">Shorts</a>
+							  <a href="AP/WEAR/bootom wearM/TrackpantsM.html">Track</a>
+							  <a href="AP/WEAR/bootom wearM/TrousersM.html">Trouser</a>
+							</div>
+							<div class="CoLumn">
+							  <h5  align="center">Bages</h5>
+							  <a href="AP/WEAR/BA/Hand Bages.html">Hand Bages</a>
+							  <a href="AP/WEAR/BA/Volets.html">Volets</a>
+							  <h5>Accessories</h5>
+							  <a href="AP/WEAR/BA/Belts.html">Belts</a>
+							  <a href="AP/WEAR/BA/Watch.html">Watch</a>
+							  <a href="AP/WEAR/BA/Breslets.html">Breslets</a>
+							</div>
+							<div class="CoLumn">
+							  <h5> Footers</h5>
+							  <a href="AP/WEAR/JF/Sports Shous.html">Sports Shoes</a>
+							  <a href="AP/WEAR/JF/Slipers.html">Slipers</a>
+							  <a href="AP/WEAR/JF/Lofars.html">Lofars</a>
+							  <a href="AP/WEAR/JF/Sandels.html">Sandals</a>
+							  <h5>Jewellery</h5>
+							  <a href="AP/WEAR/JF/Kada.html">Kada</a>
+							  <a href="AP/WEAR/JF/Rings.html">Rings</a>
+							  <a href="AP/WEAR/JF/Locats.html">Locats</a>
+							  
+							</div>
+							<!--<div class="CoLumn">
+							  <h5> Accessories</h5>
+							  <a href="#">All Wear</a>
+							  <a href="#">Link 2</a>
+							  <a href="#">Link 3</a>
+							</div>-->
+						  </div>
+						</div>
+					  </div> 
+					  <div class="drop">
+						<button class="btnn"><a href="Woman.html">WOMEN</a>
+						</button>
+						<div class="drop-con">
+						  <div class="Row">
+							<div class="CoLumn">
+							  <h5>Top Wear</h5>
+							  <a href="AP/WEAR.W/Top Wear/Kurtas.html">Kurtas</a>
+							  <a href="AP/WEAR.W/Top Wear/Sarees.html">Sarees</a>
+							  <a href="AP/WEAR.W/Top Wear/Dress.html">Dress</a>
+							  <a href="AP/WEAR.W/Top Wear/Tops.html">Tops</a>
+							  <a href="AP/WEAR.W/Top Wear/Jumpsuits.html">Jumpsuits</a>
+							</div>
+							<div class="CoLumn">
+							  <h5>Bottom Wear</h5>
+							  <a href="AP/WEAR.W/Bottom Wear/Jeans.html">Jeans</a>
+							  <a href="AP/WEAR.W/Bottom Wear/Jeggings.html">Jeggings</a>
+							  <a href="AP/WEAR.W/Bottom Wear/.html">Jeggings</a>
+							  <a href="AP/WEAR.W/Bottom Wear/Shorts.html">Shorts</a>
+							  <a href="AP/WEAR.W/Bottom Wear/Skirts.html">Skirts</a>
+							</div>
+							<div class="CoLumn">
+							  <h5 align="center">Bages</h5>
+							  <a href="AP/WEAR.W/BA/Handbags.html">Handbags</a>
+							  <a href="AP/WEAR.W/BA/Slingbags.html">Slingbags</a>
+							  <h5>Accessories</h5>
+							  <a href="AP/WEAR.W/BA/Watch.html">Watch</a>
+							  <a href="AP/WEAR.W/BA/Belts.html">Belts</a>
+							</div>
+							<div class="CoLumn">
+							  <h5>Footer</h5>
+							  <a href="AP/WEAR.W/FJ.html/Flats.html">Flats</a>
+							  <a href="AP/WEAR.W/FJ.html/Bellies.html">Bellies</a>
+							  <a href="AP/WEAR.W/FJ.html/Juttis.html">Juttis</a>
+							  <h5>Jewellery</h5>
+							  <a href="AP/WEAR.W/FJ.html/Rings.html">Rings</a>
+							  <a href="AP/WEAR.W/FJ.html/Earring.html">Earring</a>
+							  <a href="AP/WEAR.W/FJ.html/Necklaces.html">Necklaces</a>
+							</div>
+							<!--<div class="CoLumn">
+							  <h5> Accessories</h5>
+							  <a href="#">All Wear</a>
+							  <a href="#">Link 2</a>
+							  <a href="#">Link 3</a>
+							</div>-->
+						  </div>
+						</div>
+					  </div> 
+					  
+					  <div class="drop">
+						<button class="btnn"><a href="kids.html">KIDS</a>
+						</button>
+						<div class="drop-con">
+						  <div class="Row">
+							<div class="CoLumn">
+							  <h5>Boys Top wear</h5>
+							  <a href="AP/WEAR.K/Top Wear/boys/T-sharts.html">T-shirt</a>
+							  <a href="AP/WEAR.K/Top Wear/boys/Sharts.html">shirt</a>
+							  <h5>Bottom Wear</h5>
+							  <a href="AP/WEAR.K/Bottom Wear/boys/JansM.html">Jeans</a>
+							  <a href="AP/WEAR.K/Bottom Wear/boys/Shorts.html">Shorts</a>
+							  <a href="AP/WEAR.K/Bottom Wear/boys/TrousersM.html">Trouser</a>
+							</div>
+							<div class="CoLumn">
+							  <h5>Girls Top wear</h5>
+							  <a href="AP/WEAR.K/Top Wear/Girls/T-sharts.html">T-shirt</a>
+							  <a href="AP/WEAR.K/Top Wear/Girls/Dress.html">Dress</a>
+							  <a href="AP/WEAR.K/Top Wear/Girls/Tops.html">Tops</a>
+							  <h5>Bottom Wear</h5>
+							  <a href="AP/WEAR.K/Bottom Wear/Girls/palazzos.html">palazzos</a>
+							  <a href="AP/WEAR.K/Bottom Wear/Girls/Poplin.html">Poplin</a>
+							  <a href="AP/WEAR.K/Bottom Wear/Girls/Jeggings.html">Jeggings</a>
+							</div>
+							<div class="CoLumn">
+							  <h5>Boys Footer</h5>
+							  <a href="AP/WEAR.K/FA/boys/Sports Shoes.html">Sports Shoes</a>
+							  <a href="AP/WEAR.K/FA/boys/Sandals.html">Sandals</a>
+							 <h5>Girls Footer</h5>
+							  <a href="AP/WEAR.K/FA/Girls/Flats.html">Flats</a>
+							  <a href="AP/WEAR.K/FA/Girls/Heels.html">Heels</a>
+							</div>
+							<div class="CoLumn">
+							  <h5>Boys Accessories</h5>
+							  <a href="AP/WEAR.K/FA/boys/">Sunglasses</a>
+							  <a href="AP/WEAR.K/FA/boys/Watches.html">Watches</a>
+							  <h5>Girls Accessories</h5>
+							  <a href="AP/WEAR.K/FA/Girls/Watches.html">Watches</a>
+							  <a href="AP/WEAR.K/FA/Girls/ & Hats">Caps & Hats</a>
+							</div>
+							<!--<div class="CoLumn">
+							  <h5> Accessories</h5>
+							  <a href="#">All Wear</a>
+							  <a href="#">Link 2</a>
+							  <a href="#">Link 3</a>
+							</div>-->
+						  </div>
+						</div>
+					  </div> 
+					  
+					  <div class="drop">
+						<button class="btnn"><a href="BA.html">Bages & Accessories</a>
+						</button>
+						<div class="drop-con">
+						  <div class="Row">
+							<div class="CoLumn">
+							  <h5>FOR MEN </h5>
+							  <a href="AP/WEAR/BA/Hand Bages.html">Hand Bages</a>
+							  <a href="AP/WEAR/BA/Volets.html">Volets</a>
+							  <a href="AP/WEAR/BA/Belts.html">Belts</a>
+							  <a href="AP/WEAR/BA/Watch.html">Watch</a>
+							  <a href="AP/WEAR/BA/Breslets.html">Breslets</a>
+							</div>
+							<div class="CoLumn">
+							  <h5>FOR WOMEN</h5>
+							  <a href="AP/WEAR.W/BA/Handbags.html">Handbags</a>
+							  <a href="AP/WEAR.W/BA/Slingbags.html">Slingbags</a>
+							  <a href="AP/WEAR.W/BA/Watch.html">Watch</a>
+							  <a href="AP/WEAR.W/BA/Belts.html">Belts</a>
+							</div>
+							<!--<div class="CoLumn">
+							  <h5>FOR KIDS</h5>
+							  <a href="#">All Wear</a>
+							  <a href="#">Link 2</a>
+							  <a href="#">Link 3</a>
+							</div>
+							<div class="CoLumn">
+							  <h5> Accessories</h5>
+							  <a href="#">All Wear</a>
+							  <a href="#">Link 2</a>
+							  <a href="#">Link 3</a>
+							</div>-->
+						  </div>
+						</div>
+					  </div> 
+					  
+					  <div class="drop">
+						<button class="btnn"><a href="Jf.html">JEWELLERY & FOOTER</a>
+						</button>
+						<div class="drop-con">
+						  <div class="Row">
+							<div class="CoLumn">
+							  <h5>FOR MEN </h5>
+							  <a href="AP/WEAR/JF/Sports Shous.html">Sports Shous</a>
+							  <a href="AP/WEAR/JF/Slipers.html">Slipers</a>
+							  <a href="AP/WEAR/JF/Lofars.html">Lofars</a>
+							  <a href="AP/WEAR/JF/Sandels.html">Sandels</a>
+							  <a href="AP/WEAR/JF/Kada.html">Kada</a>
+							  <a href="AP/WEAR/JF/Rings.html">Rings</a>
+							  <a href="AP/WEAR/JF/Locats.html">Locats</a>
+							</div>
+							<div class="CoLumn">
+							  <h5>FOR WOMEN</h5>
+							  <a href="AP/WEAR.W/FJ.html/Flats.html">Flats</a>
+							  <a href="AP/WEAR.W/FJ.html/Bellies.html">Bellies</a>
+							  <a href="AP/WEAR.W/FJ.html/Juttis.html">Juttis</a>
+							  <a href="AP/WEAR.W/FJ.html/Rings.html">Rings</a>
+							  <a href="AP/WEAR.W/FJ.html/Earring.html">Earring</a>
+							  <a href="AP/WEAR.W/FJ.html/Necklaces.html">Necklaces</a>
+							</div>
+							<div class="CoLumn">
+							  <!--<h5>FOR KIDS</h5>
+							  <a href="#">All Wear</a>
+							  <a href="#">Link 2</a>
+							  <a href="#">Link 3</a>
+							</div>
+							<!--<div class="CoLumn">
+							  <h5>Jewellery</h5>
+							  <a href="#">All Wear</a>
+							  <a href="#">Link 2</a>
+							  <a href="#">Link 3</a>
+							</div>
+							<div class="CoLumn">
+							  <h5> Accessories</h5>
+							  <a href="#">All Wear</a>
+							  <a href="#">Link 2</a>
+							  <a href="#">Link 3</a>
+							</div>-->
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  
+			 
+
+	
+			  <span class="FLogo-back"><img src="PBanners and picks/VSL.png" class="FLogo"></span>
+
+<a href="LOGIN.html" class="por1"><img src="PBanners and picks/profil1.png" class="Profile" onclick="F()"></a>
+
+<button class="btn3" onclick="v()">
+ <img src="PBanners and picks/profil2.png" class="Profile-1"></button>
+ 
+ <input type="text" placeholder="varun sagle" class="inter"> 
+ 
+ <button class="btn5" type="submit" onclick="F()">
+	<img src="PBanners and picks/shearbar.png" class="shearchLogo"></button>
+	
+			</nav>
+				 </div>
+	  </header>
+
+
+	
+	 
+
+
+	  <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+	  <script>
+	  var app = angular.module("shoppingcart", [])
+	  .controller("shoppingCTR", function($scope){
+		  $scope.carts=[];
+		  $scope.products = [
+		  {p_id: "1", p_name:"varun ☺",discount:"Rs.500",pparsenteg:"10% off",rates:"4.5",previews:"545116", p_image: "black belt.png", p_price: 5900},
+			  
+		  ];
+					  
+		  $scope.add_cart = function(product){
+			  if(product){
+				  $scope.carts.push({p_id: product.p_id, p_name: product.p_name, p_price: product.p_price});
+			  }	
+		  }
+							  
+		  $scope.total = 0;
+					  
+		  $scope.setTotals = function(cart){
+			  if(cart){
+				  $scope.total += cart.p_price;
+			  }
+		  }
+					  
+		  $scope.remove_cart = function(cart){
+			  if(cart){
+				  $scope.carts.splice($scope.carts.indexOf(cart), 1);
+				  $scope.total -= cart.p_price;
+			  }
+		  }
+	  });
+	  </script>
+
+</body>	
+</html>
